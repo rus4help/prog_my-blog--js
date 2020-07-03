@@ -1,0 +1,24 @@
+{
+  "name": "prog_my-blog--js",
+  "version": "1.0.0",
+  "description": "Приложение для записи заметок",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rus4help/prog_my-blog--js.git"
+  },
+  "keywords": [
+    "js",
+    "blog",
+    "javascript"
+  ],
+  "author": "Денис Нихаев",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rus4help/prog_my-blog--js/issues"
+  },
+  "homepage": "https://github.com/rus4help/prog_my-blog--js#readme"
+}
