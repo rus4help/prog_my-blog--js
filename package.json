@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/rus4help/prog_my-blog--js/issues"
   },
-  "homepage": "https://github.com/rus4help/prog_my-blog--js#readme"
+  "homepage": "https://github.com/rus4help/prog_my-blog--js#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
