@@ -1,5 +1,5 @@
 import { HeaderComponent } from './components/header.copmonent'
 
-const header = new HeaderComponent('header')
+new HeaderComponent('header')
 
-console.log(header);
+
