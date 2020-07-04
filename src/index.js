@@ -1,4 +1,4 @@
-import {HeaderComponent} from './components/header.copmonent'
+import { HeaderComponent } from './components/header.copmonent'
 
 const header = new HeaderComponent('header')
 

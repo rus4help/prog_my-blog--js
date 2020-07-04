@@ -1,4 +1,4 @@
-import {Component} from '../core/component'
+import { Component } from '../core/component'
 
 export class HeaderComponent extends Component {
     constructor(id) {
@@ -6,7 +6,7 @@ export class HeaderComponent extends Component {
     }
 
     init() {
-        if(localStorage.getItem('visited')) {
+        if (localStorage.getItem('visited')) {
             this.hide()
         }
 
