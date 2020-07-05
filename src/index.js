@@ -1,8 +1,8 @@
 import { HeaderComponent } from './components/header.copmonent'
-import { NavigationComponent } from './components/navigation.component';
-import { CreateComponent } from './components/create.component';
-import { FavoriteComponent } from './components/favorite.component';
-import { PostsComponent } from './components/posts.component';
+import { NavigationComponent } from './components/navigation.component'
+import { CreateComponent } from './components/create.component'
+import { FavoriteComponent } from './components/favorite.component'
+import { PostsComponent } from './components/posts.component'
 
 new HeaderComponent('header')
 
