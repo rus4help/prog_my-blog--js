@@ -7,6 +7,13 @@ import { PostsComponent } from './components/posts.component'
 new HeaderComponent('header')
 
 const navigation = new NavigationComponent('navigation')
-const create = new NavigationComponent('create')
-const favorite = new NavigationComponent('favorite')
-const posts = new NavigationComponent('posts')
+
+const create = new CreateComponent('create')
+const favorite = new FavoriteComponent('favorite')
+const posts = new PostsComponent('posts')
+
+navigation.registerTabs([
+    { name: 'create', component: create },
+    { name: 'favorite', component: favorite },
+    { name: 'posts', component: posts }
+])
