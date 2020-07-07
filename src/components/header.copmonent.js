@@ -18,4 +18,5 @@ export class HeaderComponent extends Component {
 function buttonHandler() {
     localStorage.setItem('visited', JSON.stringify(true))
     this.hide()
+    location.reload()
 }

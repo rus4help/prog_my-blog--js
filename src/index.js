@@ -4,8 +4,10 @@ import { CreateComponent } from './components/create.component'
 import { FavoriteComponent } from './components/favorite.component'
 import { PostsComponent } from './components/posts.component'
 import { LoaderComponent } from './components/loader.component'
+import { ContainerComponent } from './components/container.component'
 
 new HeaderComponent('header')
+new ContainerComponent('container')
 
 const navigation = new NavigationComponent('navigation')
 const loader = new LoaderComponent('loader')

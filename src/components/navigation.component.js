@@ -9,6 +9,7 @@ export class NavigationComponent extends Component {
 
     init() {
         this.$el.addEventListener('click', tabClickHandler.bind(this))
+
     }
 
     registerTabs(tabs) {
