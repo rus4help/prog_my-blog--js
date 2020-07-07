@@ -3,34 +3,34 @@ import { apiService } from '../services/api.servise'
 import { TransformService } from '../services/transform.service'
 
 export class PostsComponent extends Component {
-    constructor(id, { loader }) {
-        super(id)
-        this.loader = loader
-    }
+  constructor(id, { loader }) {
+    super(id)
+    this.loader = loader
+  }
 
-    async onShow() {
-        this.loader.show()
-        const fbData = await apiService.fetchPosts()
-        const posts = TransformService.fbObjectToArray(fbData)
-        const html = posts.map(post => renderPost(post))
-        console.log(html)
-        this.loader.hide()
-        this.$el.insertAdjacentHTML('afterbegin', html.join(' '))
-    }
+  async onShow() {
+    this.loader.show()
+    const fbData = await apiService.fetchPosts()
+    const posts = TransformService.fbObjectToArray(fbData)
+    const html = posts.map(post => renderPost(post))
+    console.log(html)
+    this.loader.hide()
+    this.$el.insertAdjacentHTML('afterbegin', html.join(' '))
+  }
 
-    onHide() {
-        this.$el.innerHTML = ''
-    }
+  onHide() {
+    this.$el.innerHTML = ''
+  }
 }
 
 function renderPost(post) {
-    const tag = post.type === 'news'
-        ? '<li class="tag tag-blue tag-rounded">Новость</li>'
-        : '<li class="tag tag-rounded">Заметка</li>'
+  const tag = post.type === 'news'
+    ? '<li class="tag tag-blue tag-rounded">Новость</li>'
+    : '<li class="tag tag-rounded">Заметка</li>'
 
-    const button = '<button class="button-round button-small button-primary">Сохранить</button>'
+  const button = `<button class="button-round button-small button-primary">Сохранить</button>`
 
-    return `
+  return `
         <div class="panel">
         <div class="panel-head">
           <p class="panel-title">${post.title}</p>
