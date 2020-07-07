@@ -23,15 +23,12 @@ function submitHandler(event) {
     if (this.form.isValid()) {
         const formData = {
             type: this.$el.type.value,
+            date: new Date().toLocaleDateString(),
             ...this.form.value()
         }
 
+        this.form.clear()
+
         console.log('submit', formData)
-    } else {
-        console.warn('Form is invalid');
-
     }
-
-
-
 }
