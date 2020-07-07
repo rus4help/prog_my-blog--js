@@ -4,6 +4,6 @@ export class TransformService {
             const item = fbData[key]
             item.id = key
             return item
-        })
+        }).reverse()
     }
 }
