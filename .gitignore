@@ -1,8 +1,10 @@
 .idea/
-
+.firebase/
 *.json
 
 !package.json
 
 /node_modules
 /dist
+
+.firebaserc
